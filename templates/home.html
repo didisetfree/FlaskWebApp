@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block heading %}
+    HOME PAGE
+{% endblock %}
+{% block body %}
+	Hello, this is the  home page!
+	<style>
+		button{
+		background-color: grey
+		}
+	</style>
+	<form action="{{url_for('sayhello')}}" method="post">
+		<input type='text' name='name' placeholder='Enter your name'>
+		<button>Submit</button>
+	</form>
+{% endblock %}
