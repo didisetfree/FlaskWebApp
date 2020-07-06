@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block heading %}
+    About Page
+{% endblock %}
+{% block body %}
+	Hello, {{name}} this is the  about page!
+	<style>
+		button [class=post]{
+			background-color: cyan
+			font-size: 24px;
+			width:178px;
+			height: 50px;
+		}
+	</style>
+
+	<form action="{{url_for('post')}}" method="post">
+
+		<button>Post Something</button>
+
+	</form>
+{% endblock %}

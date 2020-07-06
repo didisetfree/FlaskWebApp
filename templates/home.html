@@ -4,13 +4,15 @@
 {% endblock %}
 {% block body %}
 	Hello, this is the  home page!
-	<style>
-		button{
-		background-color: grey
-		}
-	</style>
+	
 	<form action="{{url_for('sayhello')}}" method="post">
 		<input type='text' name='name' placeholder='Enter your name'>
 		<button>Submit</button>
+	</form>
+	<form action="{{url_for('post')}}" method="post">
+		<button class= "post" >Post On Your Feed</button>
+	</form>
+	<form action="{{url_for('about')}}" method="post">
+		<button class= "about" >About Page</button>
 	</form>
 {% endblock %}
